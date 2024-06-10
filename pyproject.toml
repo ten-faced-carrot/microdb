@@ -1,0 +1,20 @@
+[project]
+name = "microdb"
+version = "2020.0.0"
+dependencies = []
+
+requires-python = ">=3.8"
+authors = [
+  {name = "Nancy", email = "stupidjane@tutanota.com"},
+]
+maintainers = [
+  {name = "Nancy", email = "stupidjane@tutanota.com"},
+]
+description = "Tiny, fast, and simple database."
+readme = "README.MD"
+license = {file = "LICENSE.md"}
+keywords = ["database", "db", "json", "dict", "Hashmap"]
+classifiers = [
+  "Development Status :: 4",
+  "Programming Language :: Python"
+]
