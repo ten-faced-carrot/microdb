@@ -1,6 +1,6 @@
 [project]
 name = "microdb"
-version = "2024.0.2"
+version = "2024.0.2 patch 2"
 dependencies = []
 
 requires-python = ">=3.8"

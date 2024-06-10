@@ -99,11 +99,14 @@ class Query:
     
 
     def _find_all_records(self, records:list):
+
         possibleResults = records[:]
         for i,record in enumerate(possibleResults):
             for cond in self._actionchain:
                 if not cond(record):
-                    possibleResults.pop(i)
+                    possibleResults.remove(record)
+            
+
 
         return QueryResult(possibleResults)
 
