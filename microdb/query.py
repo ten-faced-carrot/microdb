@@ -105,6 +105,7 @@ class Query:
             for cond in self._actionchain:
                 if not cond(record):
                     possibleResults.remove(record)
+                    continue
             
 
 
@@ -145,6 +146,6 @@ class where:
             for cond in self._actionchain:
                 if not cond(record):
                     possibleResults.remove(record)
-            
+                    continue
 
         return QueryResult(possibleResults)
