@@ -145,7 +145,9 @@ class where:
         for i,record in enumerate(possibleResults):
             for cond in self._actionchain:
                 if not cond(record):
-                    possibleResults.remove(record)
-                    continue
+                    try:
+                        possibleResults.remove(record)
+                    finally:
+                        continue
 
         return QueryResult(possibleResults)
